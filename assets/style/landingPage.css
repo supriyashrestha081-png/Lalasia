@@ -71,7 +71,6 @@ input {
   z-index: 1;
 }
 
-
 /* Product Carousel */
 /* Removed previous full-bleed rules (width:100vw; left:-100px) that caused horizontal overflow and extra right whitespace. The carousel is now contained by the later .carousel rule. */
 
@@ -214,7 +213,7 @@ input {
   font-size: 1.1rem;
 }
 
-.benefits{
+.benefits {
   display: flex;
   flex-direction: column;
   gap: 3.125rem;
@@ -232,16 +231,15 @@ input {
   width: 100%;
   max-width: 31.25rem;
   margin-top: 2.5rem;
-
 }
 
-.cards__container{
+.cards__container {
   display: flex;
-  justify-content: space-between;
+  gap: 1.875rem;
   align-items: center;
 }
 
-.benefits__card{
+.benefits__card {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -250,70 +248,103 @@ input {
   padding: 1.5rem;
   width: 100%;
   max-width: 24.6875rem;
-
-
 }
 
-.icon-frame{
-  width: 100%;
-  max-width: 3.75rem;
-  height: auto;
+.icon-frame {
+  width: 3.75rem;
+  height: 3.75rem;
   border-radius: 50%;
   background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.benefits__icon{
-width: 100%;
+.benefits__icon {
+  width: 100%;
   max-width: 1.875rem;
   height: auto;
 }
 
-.products__lead{
+.products__lead {
   display: flex;
   flex-direction: column;
-    gap: 1.875rem;
+  gap: 1.875rem;
   width: 100%;
   max-width: 41rem;
   height: auto;
   text-align: center;
   margin: 0 auto;
-
 }
 
-.search__button{
+.search__button {
   width: 10.625rem;
 }
-.product__detail{
+.product__detail {
   display: flex;
   justify-content: space-between;
 }
 
-.product__image{
+.product__image {
   width: 100%;
-  max-width:"37.1875rem";
+  max-width: "37.1875rem";
   height: 100%;
-max-height: 31.875rem;
+  max-height: 31.875rem;
 }
 
-.detail__side{
+.detail__side {
   display: flex;
   flex-direction: column;
   gap: 3.125rem;
   width: 100%;
   max-width: 36.25rem;
-  height: auto'
+  height: auto;
 }
 
-.detail__flex{
+.detail__flex {
   display: flex;
-flex-direction: row;
-gap: 3.125rem;
+  flex-direction: row;
+  gap: 3.125rem;
 }
-.detail__side2{
+.detail__side2 {
   display: flex;
   flex-direction: column;
   gap: 3.5625rem;
   align-items: flex-end;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 41rem;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  gap: 3.125rem;
+}
+
+.articles__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  width: 100%;
+  max-width: 36.25rem;
+  height: auto;
+}
+
+.articles__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.right__box {
+  display: flex;
 }
 /* Product Carousel */
 
