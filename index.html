@@ -4,58 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <link rel="stylesheet" href="/assets/style/landingPage.css" />
+    <link rel="stylesheet" href="/assets/style/baseStyles.css" />
   </head>
   <body>
+    <!-- Placeholder for header -->
+    <div id="header"></div>
+
     <!-- Hero section -->
-    <section>
-      <h1>
+    <section class="hero">
+      <h1 class="hero__title">
         Discover Furniture With High Quality Wood
         <sup
           ><img
-            width="30"
+            width="50"
             height="auto"
             src="/assets/images/landingPage/star.png"
             alt="lil-star"
         /></sup>
       </h1>
-      <p>
+      <p class="hero__paragraph p3">
         Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
         placerat nisi, adipiscing mauris non. Purus parturient viverra nunc,
         tortor sit laoreet. Quam tincidunt aliquam adipiscing tempor.
       </p>
-      <div>
-        <div>
-          <img
-            height="auto"
-            width="32"
-            src="/assets/images/icons/search.svg"
-            alt="search"
-          />
-          <input
-            type="text"
-            id="search property"
-            name="search property"
-            placeholder="search property"
-          />
+      <div class="hero__search-wrap">
+        <img
+          src="assets/images/landingPage/arrow.svg"
+          alt=""
+          class="hero__arrow"
+        />
+        <div class="search__container">
+          <div class="search__field">
+            <img
+              height="auto"
+              width="32"
+              src="/assets/images/icons/search.svg"
+              alt="search"
+            />
+            <input
+              type="text"
+              id="search "
+              name="search property"
+              placeholder="search property"
+            />
+          </div>
+
+          <div class="search__button button"><h5>Search</h5></div>
         </div>
-        <div>Search</div>
       </div>
       <img
-        width="1240"
-        height="480"
         src="/assets/images/landingPage/room.jpg"
         alt="picture of a living room"
+        class="hero__image"
       />
     </section>
 
     <!-- Benefits -->
-    <section>
-      <div>
-        <div>
-          <h6>Benefits</h6>
-          <h1>Benefits when using our services</h1>
+    <section class="benefits">
+      <div class="benefits__container">
+        <div class="benefits__title">
+          <h5 class="title-gold">Benefits</h5>
+          <h2>Benefits when using our services</h2>
         </div>
-        <div>
+
+        <div class="benefits__description">
           <p>
             Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
             dignissim placerat nisi, adipiscing mauris non purus parturient.
@@ -117,8 +131,141 @@
           placerat nisi, adipiscing mauris non purus parturient.
         </p>
       </div>
-      <!-- testimonal needs to implement -->
-      <div></div>
+
+      <div class="product__carousel carousel">
+        <div class="carousel__viewport">
+          <ul class="carousel__track" role="list">
+            <li class="carousel__slide">
+              <div class="product__card">
+                <img
+                  src="/assets/images/landingPage/product1.jpg"
+                  alt="product1"
+                  class="product__image"
+                />
+
+                <div class="product__card-info">
+                  <div class="product__category">
+                    <h5>Desk</h5>
+                    <h3>$63.99</h3>
+                  </div>
+
+                  <h3 class="product__card-title">Wooden Bookshelf</h3>
+                  <p class="p3">Combination of wood and wool</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide">
+              <div class="product__card">
+                <img
+                  src="/assets/images/landingPage/product1.jpg"
+                  alt="product1"
+                  class="product__image"
+                />
+
+                <div class="product__card-info">
+                  <div class="product__category">
+                    <h5>Desk</h5>
+                    <h3>$63.99</h3>
+                  </div>
+
+                  <h3 class="product__card-title">Wooden Bookshelf</h3>
+                  <p class="p3">Combination of wood and wool</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide">
+              <div class="product__card">
+                <img
+                  src="/assets/images/landingPage/product1.jpg"
+                  alt="product1"
+                  class="product__image"
+                />
+
+                <div class="product__card-info">
+                  <div class="product__category">
+                    <h5>Desk</h5>
+                    <h3>$63.99</h3>
+                  </div>
+
+                  <h3 class="product__card-title">Wooden Bookshelf</h3>
+                  <p class="p3">Combination of wood and wool</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide">
+              <div class="product__card">
+                <img
+                  src="/assets/images/landingPage/product1.jpg"
+                  alt="product1"
+                  class="product__image"
+                />
+
+                <div class="product__card-info">
+                  <div class="product__category">
+                    <h5>Desk</h5>
+                    <h3>$63.99</h3>
+                  </div>
+
+                  <h3 class="product__card-title">Wooden Bookshelf</h3>
+                  <p class="p3">Combination of wood and wool</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide">
+              <div class="product__card">
+                <img
+                  src="/assets/images/landingPage/product1.jpg"
+                  alt="product1"
+                  class="product__image"
+                />
+
+                <div class="product__card-info">
+                  <div class="product__category">
+                    <h5>Desk</h5>
+                    <h3>$63.99</h3>
+                  </div>
+
+                  <h3 class="product__card-title">Wooden Bookshelf</h3>
+                  <p class="p3">Combination of wood and wool</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="carousel__slide">
+              <div class="product__card">
+                <img
+                  src="/assets/images/landingPage/product1.jpg"
+                  alt="product1"
+                  class="product__image"
+                />
+
+                <div class="product__card-info">
+                  <div class="product__category">
+                    <h5>Desk</h5>
+                    <h3>$63.99</h3>
+                  </div>
+
+                  <h3 class="product__card-title">Wooden Bookshelf</h3>
+                  <p class="p3">Combination of wood and wool</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="carousel__prev" aria-label="Previous slide">‹</button>
+        <button class="carousel__next" aria-label="Next slide">›</button>
+
+        <div
+          class="carousel__dots"
+          role="tablist"
+          aria-label="Carousel pagination"
+        ></div>
+      </div>
     </section>
 
     <section>
@@ -213,6 +360,11 @@
               </p>
             </div>
             <div>
+              <img src="/assets/images/landingPage/person1.jpg" alt="profile" />
+              <h6>By Kim Gurameh</h6>
+              <p>Friday, 1 April 2022</p>
+            </div>
+            <div>
               <div>
                 <img
                   src="/assets/images/landingPage/mirror.jpg"
@@ -225,6 +377,14 @@
                 <p>
                   Pellentesque etiam blandit in tincidunt at donec. Eget ipsum .
                 </p>
+              </div>
+              <div>
+                <img
+                  src="/assets/images/landingPage/person2.jpg"
+                  alt="profile"
+                />
+                <h6>By Jerremy Jean</h6>
+                <p>Friday, 1 April 2022</p>
               </div>
               <div>
                 <div>
@@ -241,11 +401,120 @@
                     .
                   </p>
                 </div>
+                <div>
+                  <img
+                    src="/assets/images/landingPage/person3.jpg"
+                    alt="profile"
+                  />
+                  <h6>By Michaela Augus</h6>
+                  <p>Friday, 1 April 2022</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Placeholder for footer -->
+    <div id="footer"></div>
+
+    <!-- Script to load header & footer -->
+    <script>
+      // Load header
+      fetch("/component/header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      // Load footer
+      fetch("/component/footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+
+      // carousel script
+      (function () {
+        const carousel = document.querySelector(".carousel");
+        if (!carousel) return;
+        const viewport = carousel.querySelector(".carousel__viewport");
+        const track = carousel.querySelector(".carousel__track");
+        const slides = Array.from(track.children);
+        const prev = carousel.querySelector(".carousel__prev");
+        const next = carousel.querySelector(".carousel__next");
+        const dotsNav = carousel.querySelector(".carousel__dots");
+
+        function slidesToShow() {
+          if (window.innerWidth >= 1024) return 4; // show 4 on large screens
+          if (window.innerWidth >= 768) return 2;
+          return 1;
+        }
+
+        let currentIndex = 0;
+
+        function createDots() {
+          dotsNav.innerHTML = "";
+          const show = slidesToShow();
+          const pages = Math.max(1, slides.length - show + 1);
+          for (let i = 0; i < pages; i++) {
+            const btn = document.createElement("button");
+            btn.className = "carousel__dot";
+            btn.setAttribute("aria-label", "Go to slide " + (i + 1));
+            btn.dataset.index = i;
+            btn.addEventListener("click", () => {
+              currentIndex = i;
+              update();
+            });
+            dotsNav.appendChild(btn);
+          }
+        }
+
+        function update() {
+          const show = slidesToShow();
+          const viewportWidth = viewport.clientWidth;
+          const slideWidth = Math.floor(viewportWidth / show);
+          const maxIndex = Math.max(0, slides.length - show);
+          if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+          // ensure each slide matches the calculated width so flex calculation stays consistent
+          slides.forEach((s) => {
+            s.style.minWidth = slideWidth + "px";
+          });
+
+          track.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+
+          prev.disabled = currentIndex === 0;
+          next.disabled = currentIndex === maxIndex;
+
+          // update dots
+          const dots = Array.from(dotsNav.children);
+          dots.forEach((d) => d.classList.remove("is-active"));
+          if (dots[currentIndex]) dots[currentIndex].classList.add("is-active");
+        }
+
+        prev.addEventListener("click", () => {
+          currentIndex = Math.max(0, currentIndex - 1);
+          update();
+        });
+        next.addEventListener("click", () => {
+          currentIndex = Math.min(
+            slides.length - slidesToShow(),
+            currentIndex + 1
+          );
+          update();
+        });
+
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(() => {
+            createDots();
+            update();
+          }, 80);
+        });
+
+        // initial
+        createDots();
+        update();
+      })();
+    </script>
   </body>
 </html>

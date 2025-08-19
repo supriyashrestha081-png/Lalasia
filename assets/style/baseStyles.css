@@ -1,0 +1,174 @@
+/* Base Styles */
+
+/* Font Styles */
+:root {
+  --font-family: "Eudoxus Sans", sans-serif;
+
+  /* Font sizes */
+  --fs-h1: 4rem; /* 64px */
+  --fs-h2: 2.75rem; /* 44px */
+  --fs-h3: 1.5rem; /* 24px */
+  --fs-h4: 1.25rem; /* 20px */
+  --fs-h5: 1.125rem; /* 18px */
+  --fs-h6: 1rem; /* 16px */
+  --fs-h6-plus: 0.875rem; /* 14px */
+
+  --fs-l1: 1.125rem; /* 18px */
+  --fs-l2: 1rem; /* 16px */
+  --fs-l3: 0.875rem; /* 14px */
+
+  --fs-p3: 1.125rem; /* 18px */
+  --fs-p2: 1rem; /* 16px */
+  --fs-p1: 0.875rem; /* 14px */
+
+  --fs-body: 1rem; /* 16px */
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Line heights */
+  --lh-paragraph: 1.8;
+  --lh-heading: 1.3;
+  --lh-label: 1.3;
+
+  /* Colors */
+  /* ---------- Primary Colors ---------- */
+  --color-primary-100: #016b61;
+  --color-primary-200: #2f9796;
+  --color-primary-300: #86bab8;
+  --color-primary-400: #abc2c0;
+  --color-primary-500: #c5d6d5;
+  --color-primary-600: #dce7e6;
+
+  /* ---------- Secondary Colors ---------- */
+  --color-secondary-100: #ffb21f;
+  --color-secondary-200: #ffbf5f;
+  --color-secondary-300: #ffc97f;
+  --color-secondary-400: #ffd89f;
+  --color-secondary-500: #ffe5bf;
+  --color-secondary-600: #ffefdd;
+
+  /* ---------- Title Colors ---------- */
+  --color-title-100: #151411;
+  --color-title-200: #3c3b39;
+  --color-title-300: #636260;
+  --color-title-400: #8a8988;
+  --color-title-500: #b1b1b0;
+  --color-title-600: #d0d0cf;
+
+  /* ---------- Paragraph Colors ---------- */
+  --color-paragraph-100: #afaeab;
+  --color-paragraph-200: #bcbcb1;
+  --color-paragraph-300: #cacacb;
+  --color-paragraph-400: #ddddda;
+  --color-paragraph-500: #e8e8e6;
+  --color-paragraph-600: #f1f1f0;
+
+  /* ---------- Placeholder Colors ---------- */
+  --color-placeholder-100: #f9f9f9;
+  --color-placeholder-200: #fafafa;
+  --color-placeholder-300: #fbfbfb;
+  --color-placeholder-400: #fcfcfc;
+  --color-placeholder-500: #fdfdfd;
+  --color-placeholder-600: #fefefe;
+
+  /* ---------- Screen Colors ---------- */
+  --color-screen-100: #ffffff;
+  --color-screen-200: #f9f9f9;
+}
+
+body {
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  color: var(--color-title-100);
+  background-color: var(--color-screen-200);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+}
+h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+}
+h6 {
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+}
+.h6-plus {
+  font-size: var(--fs-h6-plus);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+}
+
+.l1 {
+  font-size: var(--fs-l1);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-label);
+}
+.l2 {
+  font-size: var(--fs-l2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-label);
+}
+.l3 {
+  font-size: var(--fs-l3);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-label);
+}
+
+.p1 {
+  font-size: var(--fs-p1);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-1);
+}
+.p2 {
+  font-size: var(--fs-p2);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-1);
+}
+.p3 {
+  font-size: var(--fs-p3);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-paragraph);
+  color: var(--color-paragraph-100);
+}
+
+/* components */
+
+.button {
+  padding: 0.625rem 1.875rem;
+  background-color: var(--color-primary-100);
+  color: #fff;
+}
+
+/* extra */
+.title-gold {
+  color: var(--color-secondary-200);
+}

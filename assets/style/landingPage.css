@@ -1,0 +1,243 @@
+section {
+  margin-top: 3rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.hero__title {
+  width: 100%;
+  max-width: 46.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__paragraph {
+  max-width: 100%;
+  width: 47.5rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0.625rem;
+}
+
+.hero__arrow {
+  position: absolute;
+  left: calc(50% - 32rem);
+  top: 50%;
+  width: 90px;
+  transform: rotate(-15deg);
+  pointer-events: none;
+  z-index: 4;
+  opacity: 0.95;
+}
+
+.search__container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  width: 100%;
+  max-height: 5.25rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-screen-100);
+}
+
+.search__field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  border: none;
+  color: #afadb5;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: -3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.benefits__container {
+  display: flex;
+  justify-content: space-between;
+}
+.benefits__title {
+  max-width: 26.875rem;
+  width: 100%;
+}
+.benefits__description {
+  width: 100%;
+  max-width: 31.25rem;
+  margin-top: calc(13.5625rem -11.25rem);
+}
+
+/* Product Carousel */
+/* Removed previous full-bleed rules (width:100vw; left:-100px) that caused horizontal overflow and extra right whitespace. The carousel is now contained by the later .carousel rule. */
+
+.product__card {
+  max-width: 20rem;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product__image {
+  width: 100%;
+  height: auto;
+  max-height: 20rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.product__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.product__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.product__card-info {
+  padding: 0 0.5rem;
+}
+
+.product__category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__category h5 {
+  color: #afadb5;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: calc(100% - 2rem); /* give some breathing room and prevent overflow */
+  left: 0; /* ensure not offset */
+}
+
+.carousel__viewport {
+  overflow: hidden;
+}
+
+.carousel__track {
+  display: flex;
+  transition: transform 300ms ease;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel__slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-width: 0; /* allow JS to set exact min-width to avoid extra whitespace */
+}
+
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.carousel__prev {
+  left: 0.5rem;
+}
+.carousel__next {
+  right: 0.5rem;
+}
+
+.carousel__prev[disabled],
+.carousel__next[disabled] {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.carousel__dots {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.carousel__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+}
+.carousel__dot.is-active {
+  background: #111;
+}
+
+/* Product card tweaks to match carousel */
+.product__card {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(21, 20, 17, 0.06);
+}
+.product__image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.product__card-info {
+  padding: 1rem;
+}
+.product__category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.product__card-title {
+  margin-top: 0.25rem;
+  font-size: 1.1rem;
+}
+
+/* Product Carousel */
+
+@media (min-width: 768px) {
+  .carousel__slide {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel__slide {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
