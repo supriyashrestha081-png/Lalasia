@@ -147,6 +147,7 @@ h6 {
   font-size: var(--fs-p1);
   font-weight: var(--fw-medium);
   line-height: var(--lh-1);
+  color: var(--color-paragraph-100);
 }
 .p2 {
   font-size: var(--fs-p2);

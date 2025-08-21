@@ -82,8 +82,9 @@ input {
 
 .product__image {
   width: 100%;
-  height: auto;
-  max-height: 20rem;
+  max-width: 18.75rem;
+  height: 100%;
+  max-height: 23.8519rem;
   overflow: hidden;
   border-radius: 0.5rem;
 }
@@ -330,6 +331,12 @@ input {
 }
 
 .articles__left {
+  width: 100%;
+  max-width: 36.25rem;
+  height: auto;
+}
+
+.left__box {
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
@@ -345,6 +352,22 @@ input {
 }
 .right__box {
   display: flex;
+  gap: 1.625rem;
+}
+
+.article__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 20rem;
+  height: 100%;
+  max-height: 12.8125rem;
+}
+
+.articles__profile {
+  display: flex;
+  justify-content: space-between;
 }
 /* Product Carousel */
 
