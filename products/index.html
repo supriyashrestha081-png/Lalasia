@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/assets/style/product.css" />
     <link rel="stylesheet" href="/assets/style/baseStyles.css" />
     <link rel="stylesheet" href="/assets/style/style.css" />
+    <link rel="stylesheet" href="/assets/style/product.css" />
   </head>
   <body>
+    <!-- Placeholder for Header -->
+    <header id="header"></header>
+    
     <section>
       <div class="products__lead">
         <h1>Products</h1>
@@ -14,21 +17,25 @@
           to see our old products please enter the name of the item
         </p>
       </div>
-      <div class="product__text">
-        <div class="product__line">
-          <p>Discount</p>
-          <h2>Ramadhan Sale Offer</h2>
-          <h3>Get 40% off for the first transaction on Lalasia</h3>
-        </div>
+
+      <div class="product__banner banner">
         <img
-          class="image__product"
+          class="banner__image"
           src="/assets/images/landingPage/Rectangle 38.jpg"
           alt="living room"
         />
+        <div class="product__events">
+          <span class="button">Discount</span>
+          <div class="product__offer">
+            <h2>Ramadhan Sale Offer</h2>
+            <h3>Get 40% off for the first transaction on Lalasia</h3>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section__container">
+    <!-- Search Bar & Filter -->
+    <section class="search">
       <div class="search__container">
         <div class="search__field">
           <img
@@ -47,13 +54,27 @@
 
         <div class="search__button button"><h5>Find Now</h5></div>
       </div>
-      <div class="section__right">
+
+      <div class="search__filter">
         <img src="/assets/images/filter.svg" alt="Filter" />
         <p class="p3">Filter</p>
       </div>
     </section>
-    <section>
-      <h1>Total Product</h1>
+
+    <section class="product-list">
+      <div class="product__header">
+        <div class="total-products">
+          <h2>Total Product</h2>
+          <span>184</span>
+        </div>
+
+        <div class="sort-by">
+          <div style="display: flex; align-items: center; gap: 0.5rem">
+            <img src="/assets/images/sort.svg" alt="sort" />
+            <p>SortBy</p>
+          </div>
+        </div>
+      </div>
 
       <div class="product__container">
         <!-- card 1 -->
@@ -86,7 +107,7 @@
             <h3>$14.74</h3>
           </div>
         </div>
-<!-- card 4 -->
+        <!-- card 4 -->
         <div class="product__card">
           <img src="/assets/images/landingPage/p4.jpg" alt="Working Desk" />
           <div>
@@ -116,7 +137,7 @@
             <h3>$16.50</h3>
           </div>
         </div>
-<!-- card 7 -->
+        <!-- card 7 -->
         <div class="product__card">
           <img src="/assets/images/landingPage/p7.jpg" alt="Vase" />
           <div>
@@ -148,5 +169,21 @@
         </div>
       </div>
     </section>
+
+    <!-- placeholder for Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Script to load header & footer -->
+    <script>
+      // Load header
+      fetch("/component/header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      // Load footer
+      fetch("/component/footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
   </body>
 </html>

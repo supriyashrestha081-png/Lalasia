@@ -13,7 +13,13 @@ body {
   font-size: 1rem;
   color: #151411;
   background-color: #f9f9f9;
+  overflow: auto;
 }
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 /* Header */
 .header {
   padding-top: 2.75rem;
@@ -127,4 +133,30 @@ nav ul {
   font-weight: 500;
   font-size: 0.9rem;
   transition: color 0.2s;
+}
+
+/* Search Bar */
+
+.search__container {
+  display: flex;
+  padding: 1.25rem;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--color-screen-100);
+}
+
+.search__field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  border: none;
+  color: #afadb5;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.5rem;
+  width: 100%;
 }
