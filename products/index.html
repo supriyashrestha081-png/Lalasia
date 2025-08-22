@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <link rel="stylesheet" href="/assets/style/product.css" />
+    <link rel="stylesheet" href="/assets/style/baseStyles.css" />
+    <link rel="stylesheet" href="/assets/style/style.css" />
+  </head>
   <body>
     <section>
-      <div>
+      <div class="products__lead">
         <h1>Products</h1>
-        <p>
+        <p class="p3">
           We display products based on the latest products we have, if you want
           to see our old products please enter the name of the item
         </p>
       </div>
-      <div>
-        <div>Discount</div>
+      <div class="product__text">
+        <div class="product__line">
+          <p>Discount</p>
+          <h2>Ramadhan Sale Offer</h2>
+          <h3>Get 40% off for the first transaction on Lalasia</h3>
+        </div>
         <img
-          width="90rem"
-          height="auto"
+          class="image__product"
           src="/assets/images/landingPage/Rectangle 38.jpg"
           alt="living room"
         />
       </div>
     </section>
-    <section>
-      <div>
-        <div>
+
+    <section class="section__container">
+      <div class="search__container">
+        <div class="search__field">
           <img
             height="auto"
             width="32"
@@ -31,106 +39,111 @@
           />
           <input
             type="text"
-            id="search property"
+            id="search "
             name="search property"
             placeholder="search property"
           />
         </div>
-        <div>Search</div>
+
+        <div class="search__button button"><h5>Find Now</h5></div>
+      </div>
+      <div class="section__right">
+        <img src="/assets/images/filter.svg" alt="Filter" />
+        <p class="p3">Filter</p>
       </div>
     </section>
     <section>
       <h1>Total Product</h1>
 
-      <div>
-        <div>
+      <div class="product__container">
+        <!-- card 1 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p1.jpg" alt="White Chair" />
           <div>
-            <img src="/assets/images/landingPage/p1.jpg" alt="White Chair" />
-            <div>
-              <h5>Chair</h5>
-              <h3>White Aesthetic Chair</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$63.47</h3>
-            </div>
-          </div>
-          <div>
-            <img
-              src="/assets/images/landingPage/p2.jpg"
-              alt="Wooden Cupboard"
-            />
-            <div>
-              <h5>Cupboard</h5>
-              <h3>Wooden Cupboard 3 Row</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$79.88</h3>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/images/landingPage/p3.jpg" alt="Lounge Chair" />
-            <div>
-              <h5>Chair</h5>
-              <h3>Minimalist Lounge Chair</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$14.74</h3>
-            </div>
+            <h5>Chair</h5>
+            <h3>White Aesthetic Chair</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$63.47</h3>
           </div>
         </div>
-        <div>
+        <!-- card 2 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p2.jpg" alt="Wooden Cupboard" />
           <div>
-            <img src="/assets/images/landingPage/p4.jpg" alt="Working Desk" />
-            <div>
-              <h5>Table</h5>
-              <h3>Working Desk Setup</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$47.90</h3>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/images/landingPage/p5.jpg" alt="Cupboard" />
-            <div>
-              <h5>Cupboard</h5>
-              <h3>Wooden Dining Table</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$16.50</h3>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/images/landingPage/p6.jpg" alt="Dinning Table" />
-            <div>
-              <h5>Table</h5>
-              <h3>Wooden Dining Table</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$16.50</h3>
-            </div>
+            <h5>Cupboard</h5>
+            <h3>Wooden Cupboard 3 Row</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$79.88</h3>
           </div>
         </div>
-        <div>
+        <!-- card 3 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p3.jpg" alt="Lounge Chair" />
           <div>
-            <img src="/assets/images/landingPage/p7.jpg" alt="Vase" />
-            <div>
-              <h5>Decoration</h5>
-              <h3>White Minimalist Vase</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$58.39</h3>
-            </div>
+            <h5>Chair</h5>
+            <h3>Minimalist Lounge Chair</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$14.74</h3>
           </div>
+        </div>
+<!-- card 4 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p4.jpg" alt="Working Desk" />
           <div>
-            <img src="/assets/images/landingPage/p8.jpg" alt="Vase" />
-            <div>
-              <h5>Decoration</h5>
-              <h3>Plant With Clay Stand</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$61.49</h3>
-            </div>
+            <h5>Table</h5>
+            <h3>Working Desk Setup</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$47.90</h3>
           </div>
+        </div>
+        <!-- card 5 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p5.jpg" alt="Cupboard" />
           <div>
-            <img src="/assets/images/landingPage/p9.jpg" alt="Mirror" />
-            <div>
-              <h5>Decoration</h5>
-              <h3>Oval Gold Mirror</h3>
-              <p>Combination of wood and wool</p>
-              <h3>$32.43</h3>
-            </div>
+            <h5>Cupboard</h5>
+            <h3>Wooden Dining Table</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$16.50</h3>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p6.jpg" alt="Dinning Table" />
+          <div>
+            <h5>Table</h5>
+            <h3>Wooden Dining Table</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$16.50</h3>
+          </div>
+        </div>
+<!-- card 7 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p7.jpg" alt="Vase" />
+          <div>
+            <h5>Decoration</h5>
+            <h3>White Minimalist Vase</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$58.39</h3>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p8.jpg" alt="Vase" />
+          <div>
+            <h5>Decoration</h5>
+            <h3>Plant With Clay Stand</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$61.49</h3>
+          </div>
+        </div>
+        <!-- card 9 -->
+        <div class="product__card">
+          <img src="/assets/images/landingPage/p9.jpg" alt="Mirror" />
+          <div>
+            <h5>Decoration</h5>
+            <h3>Oval Gold Mirror</h3>
+            <p>Combination of wood and wool</p>
+            <h3>$32.43</h3>
           </div>
         </div>
       </div>

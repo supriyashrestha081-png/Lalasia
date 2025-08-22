@@ -361,13 +361,30 @@ input {
   gap: 1.25rem;
   width: 100%;
   max-width: 20rem;
-  height: 100%;
-  max-height: 12.8125rem;
 }
 
-.articles__profile {
+.articles__profile,
+.author-details {
   display: flex;
   justify-content: space-between;
+}
+
+.author-details {
+  gap: 0.625rem;
+}
+.article__text {
+  position: relative;
+}
+
+.text__line {
+  position: absolute;
+  bottom: 1.625rem;
+  left: 1.625rem;
+  right: 1.625rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
 }
 /* Product Carousel */
 
