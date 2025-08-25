@@ -173,3 +173,13 @@ h6 {
 .title-gold {
   color: var(--color-secondary-200);
 }
+
+
+/* for small screen */
+@media(max-width: 37.5rem){
+  .button{
+    padding: .375rem .625rem;
+    font-size: .625rem;
+    
+  }
+}

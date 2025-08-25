@@ -160,3 +160,11 @@ input {
   border-radius: 0.5rem;
   width: 100%;
 }
+
+/* for small screen */
+@media (max-width: 37.5rem) {
+  body {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
